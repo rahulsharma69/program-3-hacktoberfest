@@ -13,3 +13,9 @@ void Class_name::getdata(int a, int b){
     area=length*breadth;
     cout<<"the area of rectangle is :"<<area;
 }
+int main(){
+     Class_name obj1;
+   obj1.getdata(23,45);
+     
+
+}
