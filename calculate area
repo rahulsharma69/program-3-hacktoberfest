@@ -15,7 +15,7 @@ void Class_name::getdata(int a, int b){
 }
 int main(){
      Class_name obj1;
-   obj1.getdata(23,45);
+   obj1.getdata(22,54);
      
 
 }
