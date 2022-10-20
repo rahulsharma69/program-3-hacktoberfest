@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class Internals{
+    protected:
+    int marks1, marks2, marks3;
+    public:
+    void getInternalMarks(){
+        cout<<"enter the internal marks of student for three subject\n";
+        cin>>marks1>>marks2>>marks3;
+    }
+    void displayInternalMarks(){
+        cout<<"Internal marks of three subjects are "<<endl;
+        cout<<marks1<<" "<<marks2<<" "<<marks3<<endl;
+    }
+};
+class Externals{
+    protected:
+    int marks4, marks5, marks6;
+    public:
+    void getExternalMarks(){
+        cout<<"enter the external marks of student for three subject\n";
+        cin>>marks4>>marks5>>marks6;
+    }
+    void displayExternalMarks(){
+         cout<<"External marks of three subjects are "<<endl;
+        cout<<marks4<<" "<<marks5<<" "<<marks6<<endl;
+    }
+};
