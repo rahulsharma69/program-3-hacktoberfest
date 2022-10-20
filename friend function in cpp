@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+class Second;
+class One{
+    int num1;
+    public:
+    void getValue(int a){
+        num1=a;
+    }
+  friend  void add(One,Second);
+};
+class Second{
+    int num2;
+    public:
+    void getData(int b){
+    num2=b;
+}
