@@ -26,3 +26,26 @@ class Externals{
         cout<<marks4<<" "<<marks5<<" "<<marks6<<endl;
     }
 };
+class Result: public Internals, public Externals{
+    int totalMarks;
+    float avg;
+    public:
+    void CalculateMarks(){
+        totalMarks=marks1+marks2+marks3+marks4+marks5+marks6;
+        avg=totalMarks/6;
+    }
+    void displayData(){
+        cout<<"the totalmarks of internal and external is "<<totalMarks<<endl;
+        cout<<"the average of internal and external marks of student is "<<avg<<endl;
+    }
+};
+int main(){
+    Result R;
+    R.getInternalMarks();
+    R.getExternalMarks();
+    R.displayInternalMarks();
+    R.displayExternalMarks();
+    R.CalculateMarks();
+    R.displayData();
+
+}
