@@ -19,3 +19,9 @@ void structure_name:: putdata(){
     cout<<"the value of c is "<<c<<"\n";
     
 }
+int main(){
+     structure_name obj1;
+     obj1.getdata();
+     obj1.putdata();
+
+}
